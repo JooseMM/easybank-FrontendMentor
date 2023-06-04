@@ -1,0 +1,119 @@
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 5rem;
+  padding-inline: 1.5rem;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.blog-container h2 {
+  color: hsl(233, 26%, 24%);
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-block: 2rem;
+}
+
+.blog-box img {
+  max-width: 100%;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  height: 60%;
+}
+.blog-box-description {
+  background-color: white;
+  padding: 1.5rem;
+  line-height: 1.3rem;
+  color: hsl(233, 8%, 62%);
+  min-height: 40%;
+}
+.blog-box-description p:first-child {
+  font-size: 0.7rem;
+  margin-bottom: 0.4rem;
+}
+.blog-box-description p:last-child {
+  font-size: 0.9rem;
+}
+.blog-box-description h3 {
+  color: hsl(233, 26%, 24%);
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+  .blog-box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3vw;
+    justify-content: center;
+  }
+  .blog-box {
+    width: 45%;
+  }
+  .blog-box-description p:last-child {
+    font-size: clamp(0.7rem, 2vw, 1.5rem);
+    line-height: clamp(1rem, 3vw, 2rem);
+  }
+  .blog-box img {
+    height: 45%;
+  }
+  .blog-box-description p:first-child {
+    font-size: clamp(0.6rem, 1.2vw, 0.9rem);
+  }
+  .blog-box-description h3 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin-bottom: 0.7vw;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .blog-box-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .blog-container {
+    padding-inline: 10vw;
+    align-items: flex-start;
+    padding-block: 6vw;
+  }
+  .blog-container h2 {
+    margin-bottom: 1.5vw;
+    font-size: clamp(0.9rem, 1.2vw, 2.5rem);
+    font-size: 2.7vw;
+  }
+  .blog-box img {
+    min-height: 50%;
+  }
+  .blog-box-description {
+    padding-bottom: 1.5rem;
+    min-height: 40%;
+  }
+  .blog-box-description p:first-child {
+    font-size: 0.6rem;
+    margin-bottom: 0.5vw;
+  }
+  .blog-box-description p:last-child {
+    font-size: clamp(0.6rem, 0.9vw, 1.1rem);
+    line-height: 1.5vw;
+  }
+  .blog-box-description h3 {
+    font-size: clamp(0.8rem, 1.2vw, 1.4rem);
+    margin-bottom: 0.7vw;
+  }
+  .blog-box-description a {
+    transition: ease-in-out 500ms;
+  }
+  .blog-box-description a:hover {
+    color: hsl(136, 65%, 51%);
+    transition: ease-in-out 200ms;
+  }
+}

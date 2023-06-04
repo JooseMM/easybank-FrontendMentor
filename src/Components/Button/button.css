@@ -1,0 +1,26 @@
+.btn {
+  outline: none;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  background: linear-gradient(0.3turn, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  color: white;
+  font-size: 700;
+  font-size: 0.9rem;
+}
+@media only screen and (max-width: 800px) {
+  .btn-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .btn:hover {
+    cursor: pointer;
+    background: linear-gradient(
+      0.3turn,
+      hsl(136, 70%, 67%),
+      hsl(192, 74%, 64%)
+    );
+  }
+}
