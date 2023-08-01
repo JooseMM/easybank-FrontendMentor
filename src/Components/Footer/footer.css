@@ -17,6 +17,9 @@
   flex-direction: column;
   align-items: center;
 }
+.social-media-icon {
+  margin-top: 2rem;
+}
 .social-media-icon a {
   margin-right: 1rem;
 }
@@ -83,6 +86,7 @@
     padding: 0;
   }
   .social-media-icon {
+    margin-top: 0;
     display: flex;
     justify-content: space-between;
   }
